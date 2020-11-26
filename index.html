@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna | Politechnika Gdańska</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/edbbd20e25.js" crossorigin="anonymous"></script>
@@ -14,12 +15,12 @@
 <body>
     <header>
         <div class="header_upper_part">
-            <div class="header_logo"><img class="logo" src="./img/pg_poziome_logo_kolor.png"
+            <div class="header_logo"><img class="logo_blue" src="./img/pg_poziome_logo_kolor.png"
                     alt="logo politechniki gdanskiej"></div>
         </div>
         <div class="header_menu">
             <div class="menu_left_part">
-                
+
                 <div class="menu_middle_part">
                     <div class="menu_middle_upper">
                         <nav class="upper_nav navigation">
@@ -28,16 +29,17 @@
                                 <li><a href="#">PRACOWNICY</a></li>
                                 <li><a href="#">BIZNES</a></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      UCZELNIA
+                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        UCZELNIA
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="#">UCZELNIA 2</a>
-                                      <a class="dropdown-item" href="#">UCZELNIA 3</a>
-                                      <a class="dropdown-item" href="#">UCZELNIA 4</a>
-                                      <a class="dropdown-item" href="#">UCZELNIA 5</a>
+                                        <a class="dropdown-item" href="#">UCZELNIA 2</a>
+                                        <a class="dropdown-item" href="#">UCZELNIA 3</a>
+                                        <a class="dropdown-item" href="#">UCZELNIA 4</a>
+                                        <a class="dropdown-item" href="#">UCZELNIA 5</a>
                                     </div>
-                                  </li>
+                                </li>
                                 <li><a href="#">ABSOLWENCI</a></li>
                             </ul>
                         </nav>
@@ -50,40 +52,78 @@
                                 <li><i class="far fa-sticky-note fa-2x icon"></i><a href="#">Studia</a></li>
                                 <li><i class="fas fa-university fa-2x icon"></i><a href="#">III Stopień</a></li>
                                 <li><i class="fas fa-dollar-sign fa-2x icon"></i><a href="#">Płatności</a></li>
-                                
+
                             </ul>
                         </nav>
                     </div>
-            </div> 
+                </div>
             </div>
-           
-            
+
+
 
             <div class="menu_right_part">
-                
+
             </div>
         </div>
 
 
     </header>
 
-    <section >
+    <section>
         <article>
-            <h2>Tytuł pracy badawczej</h2>
+            <h3> Tytuł <span class="title_bold">pracy badawczej</span><span class="title_grey">szczegóły</span> </h3>
+            <table>
+                <tr>
+                    <td class="data_category">nr rekordu</td>
+                    <td class="data_result">748</td>
+                </tr>
+                <tr>
+                    <td class="data_category">Status</td>
+                    <td class="data_result">Zatwierdzony</td>
+                </tr>
+                <tr>
+                    <td class="data_category">Zgłaszający</td>
+                    <td class="data_result">Jan Kowalski</td>
+                </tr>
+            </table>
+
+            <h4 class="title_bold">Ogólne</h4>
+            <table>
+                <tr>
+                    <td class="data_category">Forum publikacji</td>
+                    <td class="data_result">Użycie niekomercyjne - Bez utworów niezależnych (CC-BY-NC-ND) (3.0)</td>
+                </tr>
+                <tr>
+                    <td class="data_category">Rodzaj pracy N-B</td>
+                    <td class="data_result">Artykuł w czasopiśmie / W wersji drukowanej (również elektronicznej)</td>
+                </tr>
+
+            </table>
 
         </article>
-        
+
     </section>
 
 
-   <!--  <footer>
+    <footer>
         <div class="footer_content">
-            <Link>Kontakt</Link>
+
+            <p class="contact_modal"><a href="#" class="modal_link"><u>Kontakt</u></a></p>
+            <p class="footer_logo"><img class="logo_white" src="./img/pg_poziome_logo_bialy.png"
+                alt="logo politechniki gdanskiej"></p>
         </div>
-    </footer> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

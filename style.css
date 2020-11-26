@@ -3,11 +3,9 @@
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .header_upper_part {
     width: 100%;
@@ -19,7 +17,7 @@ body {
     width: 1004px;
 }
 
-.logo {
+.logo_blue {
     width: 22%;
     margin: -2.7rem;
 }
@@ -44,9 +42,19 @@ body {
     position: absolute;
     background-color: rgb(8, 8, 116);
     width: 40%;
-    height: 8.1%;
+    height: 60px;
     margin-left: 24%;
     border-radius: 0 0 0 20px;
+}
+
+.menu_middle_lower {
+    position: absolute;
+    background-color: rgb(47, 107, 196);
+    width: 40%;
+    height: 90px;
+    margin-left: 22%;
+    border-radius: 0 20px 0 0;
+    margin-top: 60px;
 }
 
 .navigation ul {
@@ -72,9 +80,9 @@ body {
 }
 
 .dropdown-menu {
-   background-color: blue;
-   font-size: small;
-   padding: 0;
+    background-color: blue;
+    font-size: small;
+    padding: 0;
 }
 
 .lower_nav ul {
@@ -91,45 +99,78 @@ body {
     padding: 1%;
 }
 
-.menu_middle_lower {
-    position: absolute;
-    background-color: rgb(47, 107, 196);
-    width: 40%;
-    height: 12.7%;
-    margin-left: 22%;
-    border-radius: 0 20px 0 0;
-    margin-top: 3.8%;
-}
-
 .menu_right_part {
     background-color: rgb(8, 8, 116);
     width: 45%;
 }
 
-section {
-    padding: 2%;
-}
-
 article {
     text-align: center;
-    left: 8%;
     width: 1004px;
-    margin: auto;
+    margin: auto 380px;
     padding-top: 2%;
 }
 
-h2 {
+h3,
+h4 {
     padding-bottom: 2%;
     border-bottom: 1px solid gainsboro;
+    color: rgb(8, 8, 116);
+    text-align: left;
 }
 
+h4 {
+    padding-top: 2%;
+}
+
+.title_bold {
+    font-weight: 700;
+}
+
+.title_grey {
+    color: rgb(204, 212, 210);
+    padding-left: 1%;
+    font-size: large;
+}
+
+td {
+    padding: 5px;
+    font-size: small;
+}
+
+.data_category {
+    font-weight: 600;
+    width: 170px;
+}
+
+td {
+    text-align: left;
+}
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background-color: rgb(8, 8, 116);
 }
 
 .footer_content {
     width: 1004px;
-    text-align: center;
+    margin: auto 380px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+
+
+.modal_link {
+    color: #fcefef;
+}
+
+.logo_white {
+    width: 22%;
+    margin: -3rem 0 -2.5rem 20rem;
 }
