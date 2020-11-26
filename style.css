@@ -36,19 +36,93 @@ body {
 }
 
 .menu_middle_part {
-    width: 1004px;
-} 
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_middle_upper {
+    position: absolute;
+    background-color: rgb(8, 8, 116);
+    width: 40%;
+    height: 8.1%;
+    margin-left: 24%;
+    border-radius: 0 0 0 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation ul li a {
+    color: #fcefef;
+    text-decoration: none;
+}
+
+.upper_nav ul {
+    padding-top: 2%;
+}
+
+.upper_nav ul li {
+    padding: 0 2%;
+    font-size: small;
+}
+
+.dropdown-menu {
+   background-color: blue;
+   font-size: small;
+   padding: 0;
+}
+
+.lower_nav ul {
+    padding-top: 4%;
+}
+
+.lower_nav ul li {
+    padding: 0 5%;
+    font-size: small;
+}
+
+.icon {
+    color: #ffffff;
+    padding: 1%;
+}
+
+.menu_middle_lower {
+    position: absolute;
+    background-color: rgb(47, 107, 196);
+    width: 40%;
+    height: 12.7%;
+    margin-left: 22%;
+    border-radius: 0 20px 0 0;
+    margin-top: 3.8%;
+}
 
 .menu_right_part {
     background-color: rgb(8, 8, 116);
     width: 45%;
 }
 
-.main_section {
-    text-align: center;
-    width: 1004px;
-    padding: 2rem 0;
+section {
+    padding: 2%;
 }
+
+article {
+    text-align: center;
+    left: 8%;
+    width: 1004px;
+    margin: auto;
+    padding-top: 2%;
+}
+
+h2 {
+    padding-bottom: 2%;
+    border-bottom: 1px solid gainsboro;
+}
+
 
 footer {
     width: 100%;
