@@ -61,15 +61,18 @@ body {
 
 .navigation ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation ul li {
-    display: inline;
+    display: inline-block;
 }
 
 .navigation ul li a {
     color: #fcefef;
     text-decoration: none;
+    
 }
 
 .upper_nav ul {
@@ -81,11 +84,43 @@ body {
     font-size: small;
 }
 
-.dropdown-menu {
-    background-color: blue;
-    font-size: small;
-    padding: 0;
+/* Dropdown part of the upper menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
+
+.dropbtn:hover {
+    background-color: #133a75;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #133a75;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid 1px white;
+    background-color: #133a75;
+}
+
+.dropdown-content a:hover {
+    background-color: #2e558f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Lower part of the menu */
 
 .lower_nav ul {
     padding-top: 4%;
@@ -189,8 +224,6 @@ footer {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -200,12 +233,17 @@ footer {
 
 .modal_content {
     background-color: #fefefe;
-    margin: 2rem auto;
-    padding: 20px;
+    margin: 1rem auto;
+    padding: .5rem 2rem;
     border: 1px solid black;
     border-radius: 20px;
-    width: 60%;
+    width: 80%;
+    height: 92%;
     box-shadow: 5px 5px rgb(56, 63, 63);
+}
+
+.modal_content h4 {
+    padding-bottom: 5px;
 }
 
 #close_modal {
@@ -225,4 +263,12 @@ footer {
 .contact_info {
     display: flex;
     flex-direction: row;
+}
+
+.contact_info {
+    font-size: .9rem;
+}
+
+.map {
+    margin-left: 40px;
 }
