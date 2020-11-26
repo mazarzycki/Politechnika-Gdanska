@@ -108,12 +108,36 @@
     <footer>
         <div class="footer_content">
 
-            <p class="contact_modal"><a href="#" class="modal_link"><u>Kontakt</u></a></p>
+            <p class="contact_modal" onclick="open_modal()"><u>Kontakt</u></a>
+            <div id="contact" class="modal">
+                <div class="modal_content">
+                    <span id="close_modal">&times;</span>
+                    <h4>Dane kontaktowe</h4>
+                    <div class="contact_info">
+                        <div class="address">
+                            <br>
+                            Politechnika Gdańska </br>
+                            ul. Gabriela Narutowicza 11/12 </br>
+                            80-233 Gdańsk </br>
+                            Polska </br>
+                            </address>
+
+                        </div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.168382536221!2d18.614139015771652!3d54.37167508020675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd74905b613ac3%3A0x7d834113ccd9a883!2sPolitechnika%20Gda%C5%84ska!5e0!3m2!1spl!2spl!4v1606423231460!5m2!1spl!2spl"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </p>
             <p class="footer_logo"><img class="logo_white" src="./img/pg_poziome_logo_bialy.png"
-                alt="logo politechniki gdanskiej"></p>
+                    alt="logo politechniki gdanskiej"></p>
         </div>
 
-        
+
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
