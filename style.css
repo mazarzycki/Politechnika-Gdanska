@@ -284,7 +284,7 @@ td {
 /* Footer */
 
 footer {
-    position: fixed;
+    flex-shrink: 0;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -309,7 +309,7 @@ footer {
 /* Modal */
 
 .contact_modal {
-    color: #fcefef;
+    font-size: small;
 }
 
 .contact_modal:hover {
@@ -373,14 +373,16 @@ footer {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
    .header_logo {display: none;}
-   .header_menu {flex-direction: column;}
+   .header_menu {flex-direction: column; height: auto; margin-bottom: 10px;}
    .menu_left_part {display: none}
    .menu_right_part {display: none;}
    .mobile_upper_menu {display: inline-block; overflow: visible;}
+   .logo-mobile {width: 150px; margin: -20px 10px;}
+   .footer_content {width: auto;}
+   .footer_logo {display: none;}
+   .contact_modal {display: none;}
    article {width: 100%; margin: 0; padding: 0 10px;}
    h3, h4 {font-size: medium;}
-  
-   .footer_nav {display: inline;}
 }
 
 /* iPads (portrait and landscape) ----------- */

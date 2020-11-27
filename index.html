@@ -83,7 +83,15 @@
 
             </div>
 
-            <div class="pos-f-t mobile_upper_menu">
+            <div class="pos-f-t  mobile_upper_menu">
+                <nav class="navbar navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img class="logo-mobile" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
+                </nav>
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="p-4">
                         <ul>
@@ -102,7 +110,7 @@
                             <li><a href="#">ABSOLWENCI</a></li>
                         </ul>
                     </div>
-                    <section class="profile">
+                    <!-- <section class="profile">
 
                         <div class="card">
                             <div class="card-body">
@@ -114,15 +122,9 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                 </div>
-                <nav class="navbar navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
+                
             </div>
         </div>
 
@@ -149,14 +151,13 @@
             <!--Mudar a tabela-->
 
             <h4 class="title_bold">Ogólne</h4>
-            <table>
-                <tr>
-                    <td class="data_category">Forum publikacji</td>
-                    <td class="data_result">Użycie niekomercyjne - Bez utworów niezależnych (CC-BY-NC-ND) (3.0)</td>
-                </tr>
-                <tr>
-                    <td class="data_category">Rodzaj pracy N-B</td>
-                    <td class="data_result">Artykuł w czasopiśmie / W wersji drukowanej (również elektronicznej)</td>
+            <dl class="row">
+                    <dt class="col-sm-2 text-left">Forum publikacji</dt>
+                    <dd class="col-sm-10 text-left">Użycie niekomercyjne - Bez utworów niezależnych (CC-BY-NC-ND) (3.0)</dd>
+               
+                
+                    <dt class="col-sm-2 text-left">Rodzaj pracy N-B</dt>
+                    <dd class="col-sm-10 text-left">Artykuł w czasopiśmie / W wersji drukowanej (również elektronicznej)</dd>
                 </tr>
 
             </table>
@@ -181,7 +182,7 @@
                             open_modal();
                         })
             -->
-            <a class="contact_modal btn btn-link" onclick="open_modal()"><u>Kontakt</u></a>
+            <a class="contact_modal btn btn-link text-white" onclick="open_modal()"><u>Kontakt</u></a>
 
             <nav class="mobile_lower_menu">
                 <ul>
@@ -193,11 +194,9 @@
             </nav>
 
             <img class="logo_white footer_logo" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
-
         </section>
-
-
     </footer>
+
     <div id="contact" class="modal">
         <div class="modal_content">
             <span id="close_modal">&times;</span>
