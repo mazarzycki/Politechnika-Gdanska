@@ -57,6 +57,23 @@ body {
     margin-top: 60px;
 }
 
+/* Upper part of the menu for mobile */
+
+.mobile_upper_menu {
+    display: none;
+    background-color: rgb(27, 80, 160);
+    list-style-type: none;
+}
+
+.p-4 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.p-4 ul li a {
+    color: #fcefef;
+}
+
 /* Header navbars */
 
 .navigation ul {
@@ -71,10 +88,6 @@ body {
 
 /* Upper part of the menu */
 
-.upper_nav ul li {
-    display: inline-block;
-}
-
 .upper_nav ul {
     padding: 0;
     margin: 0;
@@ -84,6 +97,7 @@ body {
     padding: 0;
     font-size: 10px;
     height: 60px;
+    display: inline-block;
 }
 
 .upper_nav ul li:hover {
@@ -156,6 +170,26 @@ body {
     padding: 1%;
 }
 
+.mobile_lower_menu {
+    display: none;
+}
+
+.mobile_lower_menu ul {
+    padding-top: 4%;
+}
+
+.mobile_lower_menu ul li {
+    padding: 0 5%;
+    font-size: small;
+    display: inline;
+    height: 90px;
+}
+
+.mobile_lower_menu ul li a {
+    color: #fcefef;
+    text-decoration: none;
+}
+
 .menu_right_part {
     background-color: rgb(10, 28, 85);
     width: 45%;
@@ -210,12 +244,13 @@ article {
     padding-top: 2%;
 }
 
-h3,
+h1,
 h4 {
     padding-bottom: 2%;
     border-bottom: 1px solid gainsboro;
     color: rgb(8, 8, 116);
     text-align: left;
+    font-size: large;
 }
 
 h4 {
@@ -263,6 +298,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
+    justify-content: space-between;
 }
 
 .logo_white {
@@ -336,7 +372,15 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-
+   .header_logo {display: none;}
+   .header_menu {flex-direction: column;}
+   .menu_left_part {display: none}
+   .menu_right_part {display: none;}
+   .mobile_upper_menu {display: inline-block; overflow: visible;}
+   article {width: 100%; margin: 0; padding: 0 10px;}
+   h3, h4 {font-size: medium;}
+  
+   .footer_nav {display: inline;}
 }
 
 /* iPads (portrait and landscape) ----------- */
