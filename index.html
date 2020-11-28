@@ -17,17 +17,17 @@
 
 <body>
     <header>
-        <div class="header_upper_part">
-            <div class="header_logo"><img class="logo_blue" src="./img/pg_poziome_logo_kolor.png"
+        <div class="header-upper-part">
+            <div class="header-logo"><img class="logo-blue" src="./img/pg_poziome_logo_kolor.png"
                     alt="logo politechniki gdanskiej"></div>
         </div>
-        <div class="header_menu">
-            <div class="menu_left_part">
+        <div class="header-menu">
+            <div class="menu-left-part">
 
-                <div class="menu_middle_part">
+                <div class="menu-middle-part">
 
-                    <div class="menu_middle_upper">
-                        <nav class="upper_nav navigation">
+                    <div class="menu-middle-upper">
+                        <nav class="upper-nav navigation">
                             <ul>
                                 <li><a href="#">STRONA GŁÓWNA</a></li>
                                 <li><a href="#">PRACOWNICY</a></li>
@@ -48,8 +48,8 @@
 
 
 
-                    <div class="menu_middle_lower">
-                        <nav class="lower_nav navigation">
+                    <div class="menu-middle-lower">
+                        <nav class="lower-nav navigation">
                             <ul>
                                 <li><a href="#"><i class="fas fa-graduation-cap fa-2x icon"></i>Start</a></li>
                                 <li><a href="#"><i class="far fa-sticky-note fa-2x icon"></i>Studia</a></li>
@@ -64,13 +64,13 @@
 
 
 
-            <div class="menu_right_part">
+            <div class="menu-right-part">
                 <section class="profile">
                     <h5>Mój profil</h5>
                     <div class="card">
                         <div class="card-body">
                             <div class="picture">
-                                <img class="profile_image" src="./img/Marek.png" alt="Marek Zarzycki">
+                                <img class="profile-image" src="./img/Marek.png" alt="Marek Zarzycki">
                             </div>
                             <div class="card-text">
                                 <div class="font-weight-bold">Marek Zarzycki</div>
@@ -83,7 +83,7 @@
 
             </div>
 
-            <div class="pos-f-t  mobile_upper_menu">
+            <div class="pos-f-t  mobile-upper-menu">
                 <nav class="navbar navbar-dark">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -111,8 +111,29 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
+
+            <div class="tablet">
+                <nav class="upper-nav navigation tablet">
+                    <ul>
+                        <li><a href="#">STRONA GŁÓWNA</a></li>
+                        <li><a href="#">PRACOWNICY</a></li>
+                        <li><a href="#">BIZNES</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">UCZELNIA</a>
+                            <div class="dropdown-content">
+                                <a href="#">Uczelnia 2</a>
+                                <a href="#">Uczelnia 3</a>
+                                <a href="#">Uczelnia 4</a>
+                                <a href="#">Uczelnia 5</a>
+                            </div>
+                        </li>
+                        <li><a href="#">ABSOLWENCI</a></li>
+                    </ul>
+                </nav>
+                <img class="logo-mobile" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
+            </div>
+
         </div>
 
 
@@ -120,36 +141,27 @@
 
     <main>
         <article>
-            <h1> Tytuł <span class="title_bold">pracy badawczej</span><span class="title_grey">szczegóły</span> </h1>
+            <h1> Tytuł <span class="title-bold">pracy badawczej</span><span class="title-grey">szczegóły</span> </h1>
             <dl class="row">
                 <dt class="col-sm-2 text-left">nr rekordu</dt>
                 <dd class="col-sm-10 text-left">748</dd>
 
-
                 <dt class="col-sm-2 text-left">Status</dt>
                 <dd class="col-sm-10 text-left">Zatwierdzony</dd>
 
-
                 <dt class="col-sm-2 text-left">Zgłaszający</dt>
                 <dd class="col-sm-10 text-left">Jan Kowalski</dd>
-
             </dl>
 
-            <!--Mudar a tabela-->
-
-            <h4 class="title_bold">Ogólne</h4>
+            <h4 class="title-bold">Ogólne</h4>
             <dl class="row">
                 <dt class="col-sm-2 text-left">Forum publikacji</dt>
                 <dd class="col-sm-10 text-left">Użycie niekomercyjne - Bez utworów niezależnych (CC-BY-NC-ND) (3.0)</dd>
-
 
                 <dt class="col-sm-2 text-left">Rodzaj pracy N-B</dt>
                 <dd class="col-sm-10 text-left">Artykuł w czasopiśmie / W wersji drukowanej (również elektronicznej)
                 </dd>
                 </tr>
-
-                </table>
-
         </article>
 
     </main>
@@ -158,7 +170,7 @@
     <footer class="desktop-footer">
 
 
-        <section class="footer_content">
+        <section class="footer-content">
 
             <!--
                 TODO:
@@ -172,14 +184,14 @@
                             open_modal();
                         })
             -->
-            <a class="contact_modal btn btn-link text-white" onclick="open_modal()"><u>Kontakt</u></a>
+            <a class="contact-modal btn btn-link text-white" onclick="openModal()"><u>Kontakt</u></a>
 
-            <img class="logo_white footer_logo" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
+            <img class="logo-white footer-logo" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
         </section>
     </footer>
 
     <footer class="mobile-footer">
-        <nav class="mobile_lower_menu">
+        <nav class="mobile-lower-menu">
             <ul>
                 <li><a href="#"><i class="fas fa-graduation-cap fa-2x icon"></i>Start</a></li>
                 <li><a href="#"><i class="far fa-sticky-note fa-2x icon"></i>Studia</a></li>
@@ -188,12 +200,15 @@
             </ul>
         </nav>
         <div class="mobile-footer-lower">
-            <a class="modal-mobile text-white" onclick="open_modal()"><u>Kontakt</u></a>
+            <a class="modal-mobile text-white" onclick="openModal()"><u>Kontakt</u></a>
 
             <section class="mobile-profile">
 
                 <div class="card">
                     <div class="card-body">
+                        <div class="picture-tablet">
+                            <img class="profile-image" src="./img/Marek.png" alt="Marek Zarzycki">
+                        </div>
                         <div class="card-text">
                             <div class="font-weight-bold">Marek Zarzycki</div>
                             <div>501 641 065</div>
@@ -208,10 +223,10 @@
     </footer>
 
     <div id="contact" class="modal">
-        <div class="modal_content">
-            <span id="close_modal">&times;</span>
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
             <h4>Dane kontaktowe</h4>
-            <div class="contact_info">
+            <div class="contact-info">
                 <div class="address">
                     <address>
                         <strong>Politechnika Gdańska</strong> <br>
@@ -219,9 +234,10 @@
                         80-233 Gdańsk <br>
                         Polska
                     </address>
-                    <p class="map-mobile"><a href="http://www.google.pl/maps/place/Politechnika+Gda%C5%84ska/">Zobacz lokalizację na mapie</a></p>
+                    <p class="map-mobile"><a href="http://www.google.pl/maps/place/Politechnika+Gda%C5%84ska/">Zobacz
+                            lokalizację na mapie</a></p>
                     <hr>
-                    
+
                     <p style="font-weight: 700;">NIP: 5840203593, REGON: 000001620</p>
                     <hr>
                     <p class="phone">

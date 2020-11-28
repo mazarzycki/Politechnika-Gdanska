@@ -1,6 +1,6 @@
-function open_modal() {
+function openModal() {
     document.getElementById("contact").style.display = "block";
-    var span = document.getElementById("close_modal");
+    var span = document.getElementById("close-modal");
     span.onclick = function () {
         document.getElementById("contact").style.display = "none";
     }
