@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 body {
-    margin: 0;
+    margin: 0 0 150px 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -61,17 +61,18 @@ body {
 
 .mobile_upper_menu {
     display: none;
-    background-color: rgb(27, 80, 160);
+    background-color: #133a75;
     list-style-type: none;
 }
 
-.p-4 ul {
+.p-2 ul {
     list-style-type: none;
-    padding: 0;
+   
 }
 
-.p-4 ul li a {
+.p-2 ul li a {
     color: #fcefef;
+    padding: 3px 0;
 }
 
 /* Header navbars */
@@ -336,6 +337,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.map-mobile {
+    display: none;
+}
+
 .modal_content {
     background-color: #fefefe;
     margin: 1rem auto;
@@ -381,82 +386,27 @@ footer {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
-    .header_logo {
-        display: none;
-    }
-
-    .header_menu {
-        flex-direction: column;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .menu_left_part {
-        display: none
-    }
-
-    .menu_right_part {
-        display: none;
-    }
-
-    .mobile_upper_menu {
-        display: inline-block;
-        overflow: visible;
-    }
-
-    .logo-mobile {
-        width: 150px;
-        margin: -20px 10px;
-    }
-
-   .mobile-footer {
-       display: inline;
-   }
-
-    .mobile_lower_menu {
-        display: inline;
-    }
-
-    .mobile_lower_menu ul {
-        padding: 5px 0 0 0;
-        margin: 0;
-    }
-
-    .mobile_lower_menu ul li {
-        font-size: .8rem;
-        padding: 0 2.5%;
-    }
-
-    .mobile-footer-lower {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .card {
-        border: none;
-    }
-
-    .footer_logo {
-        display: none;
-    }
-
-    .modal-mobile {
-        display: inline;
-        text-align: left;
-        margin: 25px;
-    }
-
-    article {
-        width: 100%;
-        margin: 0;
-        padding: 0 10px;
-    }
-
-    h3,
-    h4 {
-        font-size: medium;
-    }
+    .header_logo {display: none;}
+    .header_menu {flex-direction: column; height: auto; margin-bottom: 10px;}
+    .menu_left_part {display: none}
+    .menu_right_part {display: none;}
+    .mobile_upper_menu {display: inline-block; overflow: visible;}
+    .dropdown-content a {padding: 1px; width: 120%;}
+    .logo-mobile {width: 150px; margin: -20px 10px;}
+    .mobile-footer {display: inline; overflow: visible;}
+    .mobile_lower_menu {display: inline;}
+    .mobile_lower_menu ul {padding: 5px; margin: 0; text-align: center;}
+    .mobile_lower_menu ul li {font-size: .8rem; padding: 0 2.5%;}
+    .mobile_lower_menu ul li a i {display: none;}
+    .mobile-footer-lower {display: flex; flex-direction: row;justify-content: space-between;}
+    .card {border: none;}
+    .footer_logo {display: none;}
+    .modal-mobile {display: inline; text-align: left; margin: 25px;}
+    .map {display: none;}
+    .map-mobile {display: inline;}
+    .modal_content {height: max-content;}
+    article {width: 100%; margin: 0; padding: 0 10px;}
+    h3, h4 {font-size: medium;}
 }
 
 /* iPads (portrait and landscape) ----------- */
