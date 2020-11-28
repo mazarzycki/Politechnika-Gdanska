@@ -275,7 +275,7 @@ h1,
 h4 {
     padding-bottom: 2%;
     border-bottom: 1px solid gainsboro;
-    color: rgb(8, 8, 116);
+    color:rgb(27, 80, 160);
     text-align: left;
     font-size: medium;
 }
@@ -456,7 +456,8 @@ footer {
     .map {display: inline;}
     .map-mobile { display: none;}
     article {width: 1004px; margin: auto 380px; padding-top: 2%;}
-    h1, h4 {font-size: large;}
+    h1 {font-size: 2rem;} 
+    h4 {font-size: 1.2rem;}
     
 }
 
@@ -473,7 +474,8 @@ footer {
     .map {display: inline;}
     .map-mobile { display: none;}
     article {width: 1004px; margin: auto 380px; padding-top: 2%;}
-    h1, h4 {font-size: large;}
+    h1 {font-size: xx-large;} 
+    h4 {font-size: large;}
     .profile { margin: 1rem 15rem; }
     .lower-nav ul li { padding: 0 35px; }
 }
