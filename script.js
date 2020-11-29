@@ -1,14 +1,14 @@
-document.getElementById("open-contact-modal").addEventListener('click', openModal);
+document.getElementById("open-contact-modal").addEventListener("click", openModal);
 
 function openModal() {
     document.getElementById("contact").style.display = "block";
-    var span = document.getElementById("close-modal");
+    var button = document.getElementById("close-modal");
 
-    span.addEventListener('click', function () {
+    button.addEventListener("click", function () {
         document.getElementById("contact").style.display = "none";
     });
 
-    window.addEventListener('click', function (event) {
+    window.addEventListener("click", function (event) {
         if (event.target == document.getElementById("contact")) {
             document.getElementById("contact").style.display = "none";
         }
@@ -23,13 +23,13 @@ parent.addEventListener("click", function (e) {
     if (child) {
 
         document.getElementById("contact").style.display = "block";
-        var span = document.getElementById("close-modal");
+        var button = document.getElementById("close-modal");
 
-        span.addEventListener('click', function () {
+        button.addEventListener("click", function () {
             document.getElementById("contact").style.display = "none";
         });
 
-        window.addEventListener('click', function (event) {
+        window.addEventListener("click", function (event) {
             if (event.target == document.getElementById("contact")) {
                 document.getElementById("contact").style.display = "none";
             }
