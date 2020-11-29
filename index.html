@@ -173,19 +173,7 @@
 
         <section class="footer-content">
 
-            <!--
-                TODO:
-                    1. atribuir um id pro "botao" kontakt
-                    2. remover o onclick
-                    3. no `script.js`:
-                        3.1 adicionar um listener para o evento DOMContentLoaded
-                        3.2 adicionar um listener para o evento click para abrir o modal
-                        const element = document.getElementById('');
-                        element.addEventListener('click', function () {
-                            open_modal();
-                        })
-            -->
-            <a class="contact-modal btn btn-link text-white" onclick="openModal()"><u>Kontakt</u></a>
+            <a class="contact-modal btn btn-link text-white" id="open-contact-modal"><u>Kontakt</u></a>
 
             <img class="logo-white footer-logo" src="./img/pg_poziome_logo_bialy.png" alt="logo politechniki gdanskiej">
         </section>
@@ -200,8 +188,8 @@
                 <li><a href="#"><i class="fas fa-dollar-sign fa-2x icon"></i>Płatności</a></li>
             </ul>
         </nav>
-        <div class="mobile-footer-lower">
-            <a class="modal-mobile text-white" onclick="openModal()"><u>Kontakt</u></a>
+        <div class="mobile-footer-lower parent">
+            <a class="modal-mobile text-white child" id="open-contact-modal"><u>Kontakt</u></a>
 
             <section class="mobile-profile">
 
@@ -245,9 +233,9 @@
                     <hr>
                     <p class="phone">
                         Informacja o numerach telefonów w Politechnice Gdańskiej <br>
-                       <abbr title="Numer telefonu">tel.:</abbr>+48 58 347 11 00
+                        <abbr title="Numer telefonu">tel.:</abbr>+48 58 347 11 00
                     </p>
-                
+
                     <p class="mb-1">
                         <a href="https://moja.pg.edu.pl/app/addressBook/">Informacja o pracownikach (wyszukiwarka
                             pracowników)
@@ -272,7 +260,7 @@
                         <a href="mailto:webmaster@pg.edu.pl">webmaster@pg.edu.pl</a>
                     </p>
 
-                    
+
                 </div>
                 <div class="map">
                     <iframe
